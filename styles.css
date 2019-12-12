@@ -1,0 +1,192 @@
+
+
+.body {
+font-family: "Ubuntu", sans-serif;
+font-size: 100%;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+
+  .other-cntr {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .level-title {
+      text-align: center;
+      padding: 1em;
+      color: white;
+  }
+
+  #console {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+   /* max-width: 700px; */
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    border: 6px solid rgba(180,180,180,1);
+    font: normal 16px/1 "Lucida Console", monospace;;
+    color: rgba(255,255,255,1);
+    text-align: justify;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: black;
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  }
+
+  .typed-cursor{
+    opacity: 1;
+padding: 0 2px 0 2px;
+margin-left: 3px;
+background: rgba(255,255,255,1); 
+color:rgba(255,255,255,1);
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+  #start-page {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #373c44;
+  }
+
+  #typed-strings {
+      color: #CCC;
+      background: rgb(0, 0, 0);
+  }
+
+  #logo {
+      max-width: 50%;
+      max-height: 50%;
+  }
+
+
+#typed {
+    background-color: black;
+    color: #CCC;
+    z-index:30;
+}
+
+#game-holder {
+    background-color: black; /* right side of screen */
+    height: 100%;
+    width: 100%;
+}
+
+#cont {
+    position: fixed;
+    top: 2%;
+    right: 4%;
+    padding: .5em;
+}
+
+#grid {
+    display: grid;
+    position: sticky;
+    width: 40vw;
+    overflow: hidden;
+    border: 12px solid gray;
+    border-radius: 12px;
+    background-color: darkgray;
+}
+
+#sidebar {
+max-width: 50%;
+min-width: 10%;
+position: relative;
+font-size: 1em;
+padding: 1em;
+background-color: black; /* left side of screen */
+font: white;
+}
+
+span.tile {
+    background-color: darkgray;
+    padding-right:10px;
+    padding-left:10px;
+    min-height: 9vw
+}
+
+.pic {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p{
+	line-height: 2em;
+	margin:0 0 20px;
+    text-align: center;
+    color: #CCC
+}
+
+
+.title{
+	font-size: 4em;
+}
+
+
+.wrap{
+    max-width: 600px;
+    margin:150px auto;
+}
+
+.type-wrap{
+    margin:10px auto;
+    padding:20px;
+    background:#111;
+    border-radius:5px;
+}
+
