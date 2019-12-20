@@ -8,3 +8,5 @@ Each with a specific focus. This first one will be focused on working with array
 The intended age range is probably teens and older.
 
 It's supposed to have a "hacking" feel to it, to keep people engaged while they're learning.
+
+It's a work in progress, and only the intro really works so far.
