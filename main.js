@@ -32,12 +32,16 @@ const bombPic = document.getElementsByClassName("pic");
 var userName, userLevel, testHtml, userMessage, message1, levelInput, bomb, counter, a;
 
 //set up messages and HTML
-const helpTxt = "You can delete the message you just read and type your own if you want. Use 'typing.delete();' to delete the current message, and 'typing.message('your message')'; with what you want to say in the spot of 'your message'. Just make sure to use 'typing.delete();' before each message. Ignore any errors the console throws.                                                                                                                                                                                                                                                                         Otherwise type 'levelTwo.start();' to move on to the next level."
+const helpTxt = "You can delete the message you just read and type your own if you want. Use 'typing.delete();' to delete the current message, and 'typing.message('your message')'; with what you want to say in the spot of 'your message'. Just make sure to use 'typing.delete();' before each message. Ignore any errors the console throws.                                                                                                                                                                                                                                                                         Otherwise type 'levelTwo.start();' to move on to the next level.";
 
 const msgTxt = "Welcome behind the scenes! For the first part of your testing you will be interacting through this console type 'help.txt();' and hit the enter key for more info. ";
 
 const intro = "<p>This is a secret orginization dedicated to stopping cyber-crimes.<br><br> We are always in need of new recruits, but not everyone has what it takes. The fact that you found us shows promise.<br><br> We will test you to see if you belong in this orginization.<br><br> If you're ready to begin open your browser console by pressing f12. </p>  ";
 
+const bombOneMsg = "<p>Let's start with something simple. We will start by just running a diffuse function on this bomb. Enter diffuse(); into the console, and see if it works.  </p>";
+
+
+const bombSetupMsg = "<p>This week's mission will be preparing you to control our bomb diffusing robot remotely. We have had several reports in the last month of bomb sightings all over the country. No one has been hurt yet, but were having trouble keeping up with all the reports. If you can learn how to remotely diffuse them, then you can save many lives.  </p>";
 
 
 //make objects for user to access from console
@@ -147,7 +151,7 @@ grid.innerHTML = grid.innerHTML + bomb;
 		bombs: 1,
 	};
 
-	levelThree = {
+	levelThree = {    //lvl 3 not working yet
 		start: function () {
 		ts.style.display = "none";
 		gameConsole.style.display = "none";
@@ -197,3 +201,13 @@ logo.addEventListener("click", function(event) {
 
 });
 
+/* Things to do:
+
+- Restructure to be focused on arrays and array methods and iterations
+-figure out puzzles
+-bomb info
+-
+
+
+
+*/
